@@ -201,10 +201,10 @@ var app = {
     push.on('registration', function(data) {
         console.log("registration event");
         var gcm_regid = data.registrationId;
-        alert(gcm_regid+'dashboard js');
+        //alert(gcm_regid+'dashboard js');
 
 
-	alert(gcm_regid+'gcm_regid');
+	//alert(gcm_regid+'gcm_regid');
 	//alert(E_Mail+'E_Mail');
 	//alert(username+'username');
 	//alert(region+'region');
@@ -223,7 +223,7 @@ var app = {
     console.log('searchlpa ' +result);
     if(result[0]){
       $("#popupsearchmade").popup("open");
-alert('Data available for the search made');
+//alert('Data available for the search made');
 sessionStorage.setItem("collectionArray",JSON.stringify(result[0]));
 // alert(region+'refresh new regionArray_array');
 $.mobile.loading().hide();
